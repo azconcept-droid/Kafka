@@ -5,6 +5,7 @@
 </div>
 
 **Resources**
+- [Intro to apache kafka](https://kafka.apache.org/intro)
 - [Apache kafka workflow](https://www.tutorialspoint.com/apache_kafka/apache_kafka_workflow.htm)
 
 ## Getting started
