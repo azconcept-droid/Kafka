@@ -4,6 +4,9 @@
     <img src="https://skillicons.dev/icons?i=docker,kafka" />
 </div>
 
+**Resources**
+- [Apache kafka workflow](https://www.tutorialspoint.com/apache_kafka/apache_kafka_workflow.htm)
+
 ## Getting started
 1. Fork or clone this repo
 ```
