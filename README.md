@@ -27,3 +27,5 @@ sudo docker compose up -d
 ```
 
 [issue](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://stackoverflow.com/questions/49370959/getting-org-apache-kafka-common-network-invalidreceiveexception-invalid-receiv&ved=2ahUKEwjj486og5KFAxViYUEAHVmfCCEQFnoECBQQAQ&usg=AOvVaw2TVu65wPZZNnPk-EJTYliJ)
+
+[issue](https://issues.apache.org/jira/browse/KAFKA-3746)
