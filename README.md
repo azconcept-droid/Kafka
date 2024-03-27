@@ -6,6 +6,7 @@
 
 **Resources**
 - [Intro to apache kafka](https://kafka.apache.org/intro)
+- [kafka docker github doc](https://github.com/apache/kafka/blob/trunk/docker/examples/README.md)
 - [Apache kafka workflow](https://www.tutorialspoint.com/apache_kafka/apache_kafka_workflow.htm)
 
 ## Getting started
