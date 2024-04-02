@@ -5,6 +5,7 @@
 </div>
 
 **Resources**
+- [Quick start](https://kafka.apache.org/quickstart)
 - [Intro to apache kafka](https://kafka.apache.org/intro)
 - [Official documentation](https://kafka.apache.org/documentation/#docker)
 - [kafka docker github doc](https://github.com/apache/kafka/blob/trunk/docker/examples/README.md)
