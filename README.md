@@ -23,10 +23,28 @@ cd kafka
 ```
 bash install-docker
 ```
-4. Start kafka
+## Start kafka server
+### Using Single node cluster
+1. Create a single node cluster using plaintext
 ```
-sudo docker compose up -d
+# Run from root of the repo
+$ docker compose -f docker/plaintext/docker-compose.yml up
 ```
+2. Create a single node cluster using ssl
+```
+# Run from root of the repo
+$ docker compose -f docker/ssl/docker-compose.yml up
+```
+3. Create a single node cluster using fileinput
+```
+# Run from root of the repo
+$ docker compose -f docker/fileinput/docker-compose.yml up
+```
+#### To produce message using client script
+# Run from root of the repo
+$ bin/kafka-console-producer.sh --topic test --bootstrap-server localhost:9092
+
+### Using multinode cluster
 
 [issue](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://stackoverflow.com/questions/49370959/getting-org-apache-kafka-common-network-invalidreceiveexception-invalid-receiv&ved=2ahUKEwjj486og5KFAxViYUEAHVmfCCEQFnoECBQQAQ&usg=AOvVaw2TVu65wPZZNnPk-EJTYliJ)
 
