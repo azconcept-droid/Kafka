@@ -41,9 +41,17 @@ docker compose -f ssl/docker-compose.yml up
 # Run from root of the repo
 docker compose -f fileinput/docker-compose.yml up
 ```
+#### Start zookeeper
+1. Run the command
+```
+# Start the ZooKeeper service
+bin/zookeeper-server-start.sh config/zookeeper.properties
+```
 #### To produce message using client script
+```
 # Run from root of the repo
 bin/kafka-console-producer.sh --topic test --bootstrap-server localhost:9092
+```
 
 ### Using multinode cluster
 
