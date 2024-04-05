@@ -22,3 +22,4 @@ WORKDIR /usr/local/app
 # Install node-rdkafka
 RUN npm install node-rdkafka
 # Copy package.json first to check if an npm install is needed
+

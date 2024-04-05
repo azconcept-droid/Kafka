@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  kafka-api:
+    image: node-rdkafka
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/local/app
