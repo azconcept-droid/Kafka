@@ -12,6 +12,7 @@
 - [kafka docker github doc](https://github.com/apache/kafka/blob/trunk/docker/examples/README.md)
 - [Apache kafka workflow](https://www.tutorialspoint.com/apache_kafka/apache_kafka_workflow.htm)
 - [Non java clients api](https://cwiki.apache.org/confluence/display/KAFKA/Clients)
+- [kafkajs npm module](https://kafka.js.org/docs/getting-started)
 
 ## Getting started
 1. Fork or clone this repo
