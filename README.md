@@ -8,6 +8,7 @@
 - [Quick start](https://kafka.apache.org/quickstart)
 - [Intro to apache kafka](https://kafka.apache.org/intro)
 - [Official documentation](https://kafka.apache.org/documentation/#docker)
+- [Kafka crash course](https://www.youtube.com/watch?v=ZJJHm_bd9Zo) <em>Start from 44:42</em>
 - [kafka docker github doc](https://github.com/apache/kafka/blob/trunk/docker/examples/README.md)
 - [Apache kafka workflow](https://www.tutorialspoint.com/apache_kafka/apache_kafka_workflow.htm)
 - [Non java clients api](https://cwiki.apache.org/confluence/display/KAFKA/Clients)
