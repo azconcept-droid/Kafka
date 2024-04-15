@@ -13,6 +13,7 @@
 - [Apache kafka workflow](https://www.tutorialspoint.com/apache_kafka/apache_kafka_workflow.htm)
 - [Non java clients api](https://cwiki.apache.org/confluence/display/KAFKA/Clients)
 - [kafkajs npm module](https://kafka.js.org/docs/getting-started)
+- [Youtube kafka nodejs](https://www.youtube.com/watch?v=LOLgEGet9yA&list=PLWkguCWKqN9ODj1BNk5V-aOhjvjPxSb2R&index=5)
 
 ## Getting started
 1. Fork or clone this repo
@@ -58,6 +59,12 @@ bin/kafka-console-producer.sh --topic test --bootstrap-server localhost:9092
 
 ### Using multinode cluster
 
-[issue](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://stackoverflow.com/questions/49370959/getting-org-apache-kafka-common-network-invalidreceiveexception-invalid-receiv&ved=2ahUKEwjj486og5KFAxViYUEAHVmfCCEQFnoECBQQAQ&usg=AOvVaw2TVu65wPZZNnPk-EJTYliJ)
+## Issues
 
+1. 
+```
+Connection error: getaddrinfo EAI_AGAIN kafka","retry Count":5,"retryTime":9324}{"level":"ERROR","timestamp":"2024-04-15T08:07:54.680Z","logger":"kafkajs","message":"[Connection] Connection error: getaddrinfo EAI_AGAIN kafka","broker":"kafka:9092","clientId":"my-producer","stack":"Error: getaddrinfo EAI_AGAIN kafka\n at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:118:26)"}KafkaJSNonRetriableErrorCaused by: KafkaJSConnectionError: Connection error: getaddrinfo EAI_AGAIN kafka
+```
+2. [issue](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://stackoverflow.com/questions/49370959/getting-org-apache-kafka-common-network-invalidreceiveexception-invalid-receiv&ved=2ahUKEwjj486og5KFAxViYUEAHVmfCCEQFnoECBQQAQ&usg=AOvVaw2TVu65wPZZNnPk-EJTYliJ)
+3. 
 [issue](https://issues.apache.org/jira/browse/KAFKA-3746)

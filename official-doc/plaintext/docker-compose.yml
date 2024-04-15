@@ -1,8 +1,23 @@
-version: '3.8'
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
+---
+version: '2'
 services:
   broker:
-    image: apache/kafka:3.7.0
+    image: apache/kafka:latest
     hostname: broker
     container_name: broker
     ports:
@@ -22,18 +37,3 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
-
-  kafka-ui:
-    image: provectuslabs/kafka-ui
-    container_name: kafka-ui
-    ports:
-      - "8090:8080"
-    depends_on:
-      - broker
-      # - zookeeper
-    environment:
-      KAFKA_CLUSTERS_0_NAME: cluster-demo
-      KAFKA_CLUSTERS_0_BOOTSTRAP_SERVERS: "broker:9092"
-      KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT://broker:9092, PLAINTEXT_HOST://localhost:9092'
-      KAFKA_CLUSTERS_0_ZOOKEEPER: "broker:2181"
-      DYNAMIC_CONFIG_ENABLED: true
