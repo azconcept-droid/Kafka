@@ -14,7 +14,8 @@
 - [Non java clients api](https://cwiki.apache.org/confluence/display/KAFKA/Clients)
 - [kafkajs npm module](https://kafka.js.org/docs/getting-started)
 - [Youtube kafka nodejs](https://www.youtube.com/watch?v=LOLgEGet9yA&list=PLWkguCWKqN9ODj1BNk5V-aOhjvjPxSb2R&index=5)
-
+- [wurstmeister/kafka image documentation](https://github.com/wurstmeister/kafka-docker)
+- [can't connect to kafka](https://github.com/tulios/kafkajs/issues/837)
 ## Getting started
 1. Fork or clone this repo
 ```

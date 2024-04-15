@@ -9,6 +9,7 @@ services:
 
   kafka:
     image: wurstmeister/kafka
+    hostname: kafka
     container_name: kafka
     ports:
       - "9092:9092"
@@ -26,8 +27,7 @@ services:
       - zookeeper
     environment:
       KAFKA_CLUSTERS_0_NAME: test-cluster
-      KAFKA_CLUSTERS_0_BOOTSTRAP_SERVERS: "localhost:9092"
-      KAFKA_ADVERTISED_HOST_NAME: "kafka"
+      KAFKA_CLUSTERS_0_BOOTSTRAP_SERVERS: "kafka:9092"
       KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT://kafka:9092, PLAINTEXT_HOST://localhost:9092'
       KAFKAJS_NO_PARTITIONER_WARNING: 1
       KAFKA_CLUSTERS_0_ZOOKEEPER: "zookeeper:2181"
